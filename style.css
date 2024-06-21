@@ -92,6 +92,10 @@ nav button {
     .nav-btn{
         gap: 4vw;
     }
+
+    .nav-btn button{
+        padding: 8px 18px;
+    }
     
     
 }
@@ -280,7 +284,16 @@ nav button {
 /* Partners Section Start */
 
 .partners{
+    margin-top: 20px;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+@media (max-width:700px) {
+    .partners{
+   display: none;
+    }
+
 }
