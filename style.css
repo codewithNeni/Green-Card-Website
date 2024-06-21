@@ -54,12 +54,12 @@ nav button {
     cursor: pointer;
 }
 
-.nav-btn img{
+.nav-btn img {
     height: 40px;
     display: none;
 }
 
-.nav-btn{
+.nav-btn {
     display: flex;
     align-items: center;
 }
@@ -67,7 +67,7 @@ nav button {
 
 @media (max-width:700px) {
 
-    nav{
+    nav {
         width: 100vw;
         display: flex;
         justify-content: space-between;
@@ -76,28 +76,28 @@ nav button {
         height: 90px;
     }
 
-    nav ul{
+    nav ul {
         display: none;
     }
 
-    .logo{
+    .logo {
         margin: 0px;
     }
 
-    .nav-btn img{
+    .nav-btn img {
         display: block;
         height: 30px;
     }
 
-    .nav-btn{
+    .nav-btn {
         gap: 4vw;
     }
 
-    .nav-btn button{
+    .nav-btn button {
         padding: 8px 18px;
     }
-    
-    
+
+
 }
 
 /* Hero Section Starts  */
@@ -182,13 +182,13 @@ nav button {
 
 @media (max-width:700px) {
 
-    .hero{
+    .hero {
         display: flex;
         flex-direction: column;
         height: 100vh;
     }
 
-    .hero-left{
+    .hero-left {
         width: 100%;
         padding: 0px;
         padding-left: 20px;
@@ -196,28 +196,28 @@ nav button {
         height: 60%;
     }
 
-    .hero-left h1{
+    .hero-left h1 {
         font-size: 40px;
     }
 
-    .hero-left p{
+    .hero-left p {
         width: 95%;
     }
 
-    .hero-right{
+    .hero-right {
         width: 100%;
         height: 30%;
     }
 
-    .hero-right img{
-        width: 90vw;        
+    .hero-right img {
+        width: 90vw;
     }
-    
+
 }
 
 /* Info Section Starts  */
 
-.info{
+.info {
     width: 100vw;
     height: 50vh;
     /* background-color: gray; */
@@ -225,7 +225,7 @@ nav button {
     align-items: center;
 }
 
-.info-container{
+.info-container {
     background-color: rgba(61, 84, 77, 24%);
     width: 90%;
     height: 70%;
@@ -236,27 +236,27 @@ nav button {
     border-radius: 32px;
 }
 
-.info-box h2{
+.info-box h2 {
     color: white;
     font-size: 50px;
     font-family: var(--primary-font-family);
 }
 
-.info-box p{
+.info-box p {
     color: #2BB32A;
     font-family: var(--primary-font-family);
 }
 
 @media (max-width:700px) {
-    .info{
+    .info {
         width: 100vw;
         height: 120vh;
         display: flex;
         align-items: flex-start;
         justify-content: flex-start;
     }
-    
-    .info-container{
+
+    .info-container {
         background-color: rgba(61, 84, 77, 24%);
         width: 85%;
         height: 97%;
@@ -267,23 +267,23 @@ nav button {
         justify-content: space-evenly;
         border-radius: 32px;
     }
-    
-    .info-box h2{
+
+    .info-box h2 {
         color: white;
-        font-size: 50px;
+        font-size: 45px;
         font-family: var(--primary-font-family);
     }
-    
-    .info-box p{
+
+    .info-box p {
         color: #2BB32A;
         font-family: var(--primary-font-family);
     }
-    
+
 }
 
 /* Partners Section Start */
 
-.partners{
+.partners {
     margin-top: 20px;
     width: 100%;
     display: flex;
@@ -292,8 +292,85 @@ nav button {
 }
 
 @media (max-width:700px) {
-    .partners{
-   display: none;
+    .partners {
+        display: none;
+    }
+}
+
+/* Offer Section Start */
+
+.offer{
+    height: 60vh;
+    width: 100%;
+    margin-top: 100px;
+    /* background-color: aqua; */
+}
+
+.offer-content{
+    width: 90%;
+    /* background-color: gray; */
+    height: 80%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.offer h2{
+    width: 100vw;
+    text-align: center;
+    color: white;
+    font-family: var(--primary-font-family);
+    font-size: 55px;
+}
+
+.offer-box{
+    height: 80%;
+    /* background-color: red; */
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--primary-font-family);
+    justify-content: center;
+    color: white;
+}
+
+.offer-box img{
+    width: 70px;
+}
+
+.offer-box p{
+    color: #ADB2B1;
+    text-align: center;
+}
+
+.offer h1{
+    font-size: 25px;
+}
+
+@media (max-width:700px) {
+
+    .offer{
+        height: 110vh;
+        margin-top: 30px;
     }
 
+    .offer h2{
+        font-size: 33px;
+    }
+
+    .offer-content{
+        display: flex;
+        flex-direction: column;
+        height: 89%;
+        width: 95%;
+        align-items: center;
+    }
+    
+    .offer-box{
+        width: 90%;
+        height: 30%;
+    }
 }
