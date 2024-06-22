@@ -461,3 +461,95 @@ nav button {
 
     }
 }
+
+
+/* Design-2 Starts from here */
+
+.design-2 {
+    width: 90%;
+    /* background-color: red; */
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    height: 75vh;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.design-2-left {
+    /* background-color: #ADB2B1; */
+    width: 55%;
+    font-family: var(--secondary-font-family);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 20px;
+}
+
+.design-2-left h2 {
+    font-size: 45px;
+    width: 100%;
+}
+
+.design-2-left p {
+    width: 90%;
+    margin-top: 15px;
+
+}
+
+.design-2-right {
+    height: 83%;
+    /* background-color: #238a75; */
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.design-2-right img {
+    width: 35vw;
+}
+
+.btn-2{
+    width: 160px;
+}
+
+@media (max-width:700px) {
+
+    .design-2 {
+        width: 100%;
+        display: flex;
+        height: 95vh;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .design-2-left {
+        width: 95%;
+    }
+
+    .design-2-left h2 {
+        font-size: 39px;
+    }
+
+    .design-2-left p {
+        width: 96%;
+    }
+
+    .btn {
+        font-size: 15px;
+        width: 180px;
+    }
+
+    .design-2-right img {
+        width: 90vw;
+    }
+
+
+    .design-2-right {
+        height: 83%;
+        width: 95%;
+
+    }
+}
