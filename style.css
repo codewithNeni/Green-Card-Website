@@ -130,10 +130,10 @@ nav button {
 
 }
 
-.hero-left button {
+.btn {
     display: flex;
     align-items: center;
-    padding: 0px 20px;
+    padding: 0px 18px;
     border-radius: 64px;
     background-color: #2BB32A;
     color: white;
@@ -141,12 +141,12 @@ nav button {
     border: none;
     font-size: 18px;
     justify-content: space-evenly;
-    width: 195px;
+    width: 210px;
     height: 53px;
     margin-top: 30px;
 }
 
-.hero-left button img {
+.btn img {
     width: 10%;
 }
 
@@ -299,14 +299,14 @@ nav button {
 
 /* Offer Section Start */
 
-.offer{
+.offer {
     height: 60vh;
     width: 100%;
     margin-top: 100px;
     /* background-color: aqua; */
 }
 
-.offer-content{
+.offer-content {
     width: 90%;
     /* background-color: gray; */
     height: 80%;
@@ -316,7 +316,7 @@ nav button {
     align-items: center;
 }
 
-.offer h2{
+.offer h2 {
     width: 100vw;
     text-align: center;
     color: white;
@@ -324,7 +324,7 @@ nav button {
     font-size: 55px;
 }
 
-.offer-box{
+.offer-box {
     height: 80%;
     /* background-color: red; */
     width: 30%;
@@ -337,40 +337,128 @@ nav button {
     color: white;
 }
 
-.offer-box img{
+.offer-box img {
     width: 70px;
 }
 
-.offer-box p{
+.offer-box p {
     color: #ADB2B1;
     text-align: center;
 }
 
-.offer h1{
+.offer h1 {
     font-size: 25px;
 }
 
 @media (max-width:700px) {
 
-    .offer{
+    .offer {
         height: 110vh;
         margin-top: 30px;
     }
 
-    .offer h2{
+    .offer h2 {
         font-size: 33px;
     }
 
-    .offer-content{
+    .offer-content {
         display: flex;
         flex-direction: column;
         height: 89%;
         width: 95%;
         align-items: center;
     }
-    
-    .offer-box{
+
+    .offer-box {
         width: 90%;
         height: 30%;
     }
+}
+
+/* Design Section Starts */
+
+.design {
+    width: 90%;
+    background-color: red;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    height: 75vh;
+    justify-content: center;
+}
+
+.design-left {
+    background-color: #ADB2B1;
+    width: 50%;
+    font-family: var(--secondary-font-family);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 20px;
+}
+
+.design-left h2 {
+    font-size: 45px;
+    width: 100%;
+}
+
+.design-left p {
+    width: 60%;
+    margin-top: 15px;
+
+}
+
+.design-right {
+    height: 83%;
+    background-color: #238a75;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.design-right img {
+    width: 35vw;
+}
+
+@media (max-width:700px) {
+
+    .design {
+        width: 100%;
+        background-color: red;
+        display: flex;
+        height: 95vh;
+        justify-content: space-evenly;
+        flex-direction: column-reverse;
+    }
+
+    .design-left{
+        width: 95%;
+    }
+
+    .design-left h2{
+        font-size: 39px;
+    }
+
+    .design-left p{
+        width: 96%;
+    }
+
+    .btn {
+        font-size: 15px;
+        width: 180px;
+    }
+
+    .design-right img {
+        width: 90vw;
+    }
+
+   
+.design-right {
+    height: 83%;
+    background-color: #238a75;
+    width: 95%;
+
+}
 }
