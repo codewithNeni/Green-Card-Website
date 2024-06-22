@@ -430,18 +430,18 @@ nav button {
         display: flex;
         height: 95vh;
         justify-content: space-evenly;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
-    .design-left{
+    .design-left {
         width: 95%;
     }
 
-    .design-left h2{
+    .design-left h2 {
         font-size: 39px;
     }
 
-    .design-left p{
+    .design-left p {
         width: 96%;
     }
 
@@ -454,10 +454,10 @@ nav button {
         width: 90vw;
     }
 
-   
-.design-right {
-    height: 83%;
-    width: 95%;
 
-}
+    .design-right {
+        height: 83%;
+        width: 95%;
+
+    }
 }
