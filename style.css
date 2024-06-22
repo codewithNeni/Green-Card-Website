@@ -379,7 +379,7 @@ nav button {
 
 .design {
     width: 90%;
-    background-color: red;
+    /* background-color: red; */
     display: flex;
     margin: 0 auto;
     align-items: center;
@@ -388,7 +388,7 @@ nav button {
 }
 
 .design-left {
-    background-color: #ADB2B1;
+    /* background-color: #ADB2B1; */
     width: 50%;
     font-family: var(--secondary-font-family);
     color: white;
@@ -411,7 +411,7 @@ nav button {
 
 .design-right {
     height: 83%;
-    background-color: #238a75;
+    /* background-color: #238a75; */
     width: 40%;
     display: flex;
     align-items: center;
@@ -426,7 +426,7 @@ nav button {
 
     .design {
         width: 100%;
-        background-color: red;
+        /* background-color: red; */
         display: flex;
         height: 95vh;
         justify-content: space-evenly;
@@ -457,7 +457,6 @@ nav button {
    
 .design-right {
     height: 83%;
-    background-color: #238a75;
     width: 95%;
 
 }
