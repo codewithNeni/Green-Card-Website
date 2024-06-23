@@ -8,7 +8,12 @@
 
 body {
     background-image: url(assets/GreenBank\ Landing\ Page.jpg);
-    background-size: cover;
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 100%;
     height: 100%;
     background-repeat: no-repeat;
     width: 100vw;
@@ -30,8 +35,24 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0px 80px;
+    position: relative;
+
     font-family: var(--primary-font-family);
     /* background-color: rgb(65, 80, 80); */
+    animation: nav 3s 1;
+    animation-direction: normal;
+}
+
+@keyframes nav {
+    0% {
+        left: 0px;
+        top: -100px;
+    }
+
+    75% {
+        left: 0px;
+        top: 0px;
+    }
 }
 
 nav ul {
@@ -102,11 +123,24 @@ nav button {
 
 /* Hero Section Starts  */
 
+@keyframes heroLeft {
+    0% {
+        left: -700px;
+        top: 0px;
+    }
+
+    25% {
+        left: 0px;
+        top: 0px;
+    }
+}
+
 .hero {
     /* background-color: aqua; */
     height: 70vh;
     width: 100%;
     display: flex;
+
 }
 
 .hero-left {
@@ -117,6 +151,10 @@ nav button {
     height: 100%;
     padding: 0px 80px;
     padding-top: 60px;
+    position: relative;
+    animation: heroLeft 6s 1;
+    animation-direction: normal;
+    position: relative;
 }
 
 .hero-left h1 {
@@ -127,6 +165,8 @@ nav button {
     width: 75%;
     font-family: var(--primary-font-family);
     margin-top: 20px;
+    color: #ADB2B1;
+
 
 }
 
@@ -153,7 +193,22 @@ nav button {
 .hero-right {
     width: 50%;
     height: 100%;
-    /* background-color: violet; */
+    position: relative;
+    animation: heroRight 6s 1;
+    animation-direction: normal;
+    position: relative;
+}
+
+@keyframes heroRight {
+    0% {
+        right: -700px;
+        top: 0px;
+    }
+
+    25% {
+        right: 0px;
+        top: 0px;
+    }
 }
 
 .hero-right img {
@@ -223,7 +278,24 @@ nav button {
     /* background-color: gray; */
     display: flex;
     align-items: center;
+    position: relative;
+    animation: info 6s;
+    animation-direction:normal;
+    -webkit-animation-delay: 1s;
 }
+
+@keyframes info {
+    0% {
+        left: -700px;
+        top: 0px;
+    }
+
+    25% {
+        left: 0px;
+        top: 0px;
+    }
+}
+
 
 .info-container {
     background-color: rgba(61, 84, 77, 24%);
@@ -303,9 +375,23 @@ nav button {
     height: 60vh;
     width: 100%;
     margin-top: 100px;
-    /* background-color: aqua; */
+    position: relative;
+    animation: heroRight 6s 1;
+    animation-direction: normal;
+    position: relative;
 }
 
+@keyframes offerh2 {
+    0% {
+        right: -700px;
+        top: 0px;
+    }
+
+    25% {
+        right: 0px;
+        top: 0px;
+    }
+}
 .offer-content {
     width: 90%;
     /* background-color: gray; */
@@ -322,6 +408,10 @@ nav button {
     color: white;
     font-family: var(--primary-font-family);
     font-size: 55px;
+    position: relative;
+    animation: offerh2 6s 1;
+    animation-direction: normal;
+    position: relative;
 }
 
 .offer-box {
@@ -406,6 +496,8 @@ nav button {
 .design-left p {
     width: 60%;
     margin-top: 15px;
+    color: #ADB2B1;
+
 
 }
 
@@ -443,6 +535,8 @@ nav button {
 
     .design-left p {
         width: 96%;
+        color: #ADB2B1;
+
     }
 
     .btn {
@@ -451,7 +545,7 @@ nav button {
     }
 
     .design-right img {
-        width: 90vw;
+        width: 95vw;
     }
 
 
@@ -471,7 +565,7 @@ nav button {
     display: flex;
     margin: 0 auto;
     align-items: center;
-    height: 75vh;
+    height: 80vh;
     justify-content: center;
     flex-direction: row-reverse;
 }
@@ -495,6 +589,7 @@ nav button {
 .design-2-left p {
     width: 90%;
     margin-top: 15px;
+    color: #ADB2B1;
 
 }
 
@@ -511,7 +606,7 @@ nav button {
     width: 35vw;
 }
 
-.btn-2{
+.btn-2 {
     width: 160px;
 }
 
@@ -520,7 +615,7 @@ nav button {
     .design-2 {
         width: 100%;
         display: flex;
-        height: 100vh;
+        height: 105vh;
         justify-content: space-evenly;
         flex-direction: column;
     }
@@ -543,7 +638,7 @@ nav button {
     }
 
     .design-2-right img {
-        width: 90vw;
+        width: 95vw;
     }
 
 
@@ -551,5 +646,219 @@ nav button {
         height: 83%;
         width: 95%;
 
+    }
+}
+
+
+/* Testimonial Section Starts */
+
+.testimonial {
+    width: 90%;
+    height: 80vh;
+    /* background-color: goldenrod; */
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.testimonial-box {
+    width: 30%;
+    height: 64%;
+    /* background-color: red; */
+    padding-top: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: var(--secondary-font-family);
+    border-radius: 32px;
+    background-color: rgba(61, 84, 77, 0.226);
+}
+
+.testimonial-box img {
+    width: 60px;
+}
+
+.testimonial-box-rev-content p {
+    color: #ADB2B1;
+}
+
+.testimonial-box-rev-content h3 {
+    font-weight: 400;
+}
+
+.testimonial-box-rev-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin-left: 10px;
+    /* align-items: center; */
+}
+
+.testimonial-box-rev {
+    display: flex;
+}
+
+@media (max-width:700px) {
+
+    .testimonial {
+        width: 100%;
+        display: flex;
+        height: 150vh;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-box {
+        width: 90%;
+        height: 30%;
+        /* background-color: red; */
+        justify-content: center;
+        padding-left: 4%;
+        padding-right: 4%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-family: var(--secondary-font-family);
+        border-radius: 32px
+    }
+}
+
+/* Footer Section starts */
+
+footer {
+    height: 350px;
+    width: 100%;
+    background-color: rgba(61, 84, 77, 0.301);
+    color: white;
+    font-family: var(--primary-font-family);
+}
+
+.footer-content {
+    height: 350px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    font-family: var(--primary-font-family);
+}
+
+
+.footer-1 {
+    width: 30%;
+    padding-left: 7%;
+}
+
+.footer-1 img {
+    width: 160px;
+    margin-bottom: 3%;
+}
+
+.footer-2 {
+    width: 17%;
+}
+
+.footer-3 {
+    width: 17%;
+}
+
+.footer-4 {
+    width: 17%;
+}
+
+.footer-5 {
+    width: 17%;
+}
+
+.footer-box p,
+li {
+    color: #ADB2B1;
+}
+
+.footer-box h3 {
+    font-size: 24px;
+}
+
+.copyright {
+    background-color: rgba(61, 84, 77, 0.301);
+    display: none;
+}
+
+hr {
+    display: none;
+}
+
+.footer-box {
+    padding-top: 6%;
+}
+
+.footer-box ul {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7vw;
+}
+
+@media (max-width:700px) {
+
+    body {
+        background-image: url(assets/GreenBank\ Landing\ Page.jpg);
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 100%;
+    }
+
+    footer {
+        width: 90%;
+        height: 154vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px auto;
+    }
+
+    .footer-content {
+        width: 90%;
+        height: 140vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px auto;
+    }
+
+
+    .footer-box {
+        width: 90%;
+        height: 10%;
+        padding-left: 5%;
+    }
+
+    .copyright p {
+        color: #ADB2B1;
+        width: 90%;
+        font-size: 14px;
+        margin: 0px auto;
+        text-align: center;
+        background-color: none;
+    }
+
+    hr {
+        display: inline;
+        width: 87%;
+        color: #ADB2B1;
+    }
+
+    .copyright {
+        display: block;
+        margin-top: 29px;
     }
 }
